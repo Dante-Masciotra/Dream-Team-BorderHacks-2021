@@ -19,20 +19,18 @@ section {
     padding:1vw;
 }
 .employee-content {
-    display:inline-flex;
-    text-align: center;
-    
-    margin:0;
-    align-content:center;
+    text-align-last: center;
+    justify-content:center;
 }
 .employee-content .skills{
-    
+    margin-inline:5vw;
 }
 .employee-content .skills h2{
-    
+    margin-inline:5vw;
 }
 .employee-content .personality{
     display:inline-flex;
+    margin-inline:5vw;
 }
 .employee-content .personality .personality-tab img{
     max-width: 50px;
