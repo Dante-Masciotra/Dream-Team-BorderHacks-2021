@@ -19,6 +19,8 @@ section {
 .employee-content {
     display:inline-flex;
     text-align: center;
+    
+    margin:0;
     align-content:center;
 }
 .employee-content .skills{
