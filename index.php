@@ -98,7 +98,6 @@ if ($result->num_rows > 0) {
     </div>
 </div>
 </section>
-</div>
 </div>";
   }
 } else {
