@@ -23,9 +23,17 @@ section {
     justify-content:center;
 }
 .employee-content .skills{
-    margin-inline:5vw;
+    margin-left:5vw;
+    margin-right:1vw;
 }
+<<<<<<< Updated upstream
 
+=======
+.employee-content .Programs{
+    margin-left:5vw;
+    margin-right:1vw;
+}
+>>>>>>> Stashed changes
 .employee-content .personality{
     display:inline-flex;
     margin-inline:5vw;
