@@ -25,9 +25,7 @@ section {
 .employee-content .skills{
     margin-inline:5vw;
 }
-.employee-content .skills h2{
-    margin-inline:5vw;
-}
+
 .employee-content .personality{
     display:inline-flex;
     margin-inline:5vw;

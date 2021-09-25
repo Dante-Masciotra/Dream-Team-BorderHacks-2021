@@ -1,3 +1,18 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "rolecall";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,22 +33,8 @@
           </div>
     </div>
 <?php
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "rolecall";
-
-// Create connection
-$conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
-}
-
 $sql = "SELECT * FROM personal_analysis WHERE Skills LIKE '%Java%'";
 $result = $conn->query($sql);
-
-
 if ($result->num_rows > 0) {
   // output data of each row
   $i=0;
@@ -56,7 +57,7 @@ if ($result->num_rows > 0) {
     echo "<h2 class='skill-content'> ".$level."</h2>";
     }
     echo  "</div>
-    <div>
+    <div class='sLevel'>
     <h1>Level</h1>";
     foreach($str_arr2 as $level){
       echo "<h2 class='skill-content'> ".$level."</h2>";
