@@ -44,14 +44,17 @@ if ($result->num_rows > 0) {
     <div class='personality'>
     <div class='personality-tab'>
         <h2 class='personality-content'>Colour</h2>
+        <h3 class='personality-content'>". $row['Colour'] ."</h3>
         <img src='check.png' alt='Option'>
     </div>
     <div class='personality-tab'>
         <h2 class='personality-content'>Brigs</h2>
+        <h3 class='personality-content'>". $row['MBTI'] ."</h3>
         <img src='cross-mark.png' alt='Option'>
     </div>
     <div class='personality-tab'>
         <h2 class='personality-content'>Work</h2>
+        <h3 class='personality-content'>". $row['Work'] ."</h3>
         <img src='check.png' alt='Option'>
     </div>
 </div>
