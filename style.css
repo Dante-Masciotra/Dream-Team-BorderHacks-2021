@@ -1,3 +1,12 @@
+h2{
+    font-size:100%;
+}
+h1{
+    font-size:100%;
+}
+h3{
+    font-size:100%
+}
 .current {
     position:absolute;
     left:0%;
@@ -45,11 +54,8 @@ section {
     margin-inline:5vw;
 }
 .employee-content .personality .personality-tab img{
-    max-width: 50px;
+    max-width: 40px;
     height:min-content;
-}
-.employee-content .name{
-    
 }
 
 .dropdown {
@@ -77,7 +83,7 @@ section {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
-  display: block;
+  display:inline-block;
 }
 
 .dropdown-content input:hover {background-color: #ddd;}
