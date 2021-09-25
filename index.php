@@ -1,3 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Hello -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="selection">
+        <div class="dropdown">
+            <button class="dropbtn">Dropdown</button>
+            <div class="dropdown-content">
+              <input type="checkbox">Skill</input>
+            </div>
+          </div>
+    </div>
 <?php
 $servername = "localhost";
 $username = "root";
@@ -31,16 +50,33 @@ if ($result->num_rows > 0) {
 
     $str_arr = explode (",", $row["Skills"]);
     $str_arr2 = explode (",", $row["slevel"]); 
+    $str_arr3 = explode (",", $row["Program"]);
+    $str_arr4 = explode (",", $row["plevel"]); 
     foreach($str_arr as $level){
     echo "<h2 class='skill-content'> ".$level."</h2>";
     }
-    echo  "</div>";
-    echo "<div>
+    echo  "</div>
+    <div>
     <h1>Level</h1>";
     foreach($str_arr2 as $level){
       echo "<h2 class='skill-content'> ".$level."</h2>";
     }
+
+    
     echo "</div>
+    <div class='Programs'>
+    <h1>Programs</h1>";
+    foreach($str_arr3 as $level){
+      echo "<h2 class='skill-content'> ".$level."</h2>";
+      }
+      echo  "</div>";
+      echo "<div>
+      <h1>Level</h1>";
+      foreach($str_arr4 as $level){
+        echo "<h2 class='skill-content'> ".$level."</h2>";
+      }
+
+  echo "</div>
     <div class='personality'>
     <div class='personality-tab'>
         <h2 class='personality-content'>Colour</h2>
@@ -67,25 +103,7 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <!-- Hello -->
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Document</title>
-</head>
-<body>
-    <div id="selection">
-        <div class="dropdown">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-              <input type="checkbox">Skill</input>
-            </div>
-          </div>
-    </div>
+
     <div id="companyCreation"></div>
     <div id="projectCreation"></div>
 </body>
