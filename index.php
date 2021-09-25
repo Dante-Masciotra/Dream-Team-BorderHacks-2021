@@ -11,14 +11,16 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$sql = "SELECT id, Ename, Skills, slevel FROM personal_analysis WHERE Skills LIKE '%Java%'";
+$sql = "SELECT * FROM personal_analysis WHERE Skills LIKE '%Java%'";
 $result = $conn->query($sql);
 
 
 if ($result->num_rows > 0) {
   // output data of each row
+  $i=0;
   while($row = $result->fetch_assoc()) {
-    echo "<div class='employee'>
+    $i++;
+    echo "<div class='employee' id='e$i'>
     <section>
         <img src='avatar.png' alt='Avatar'>
         <h1 class='name'>" . $row["Ename"] ."</h1>
