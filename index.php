@@ -32,6 +32,8 @@ if ($conn->connect_error) {
             </div>
           </div>
     </div>
+<div class="current"></div>
+<div class="suggested">
 <?php
 $sql = "SELECT * FROM personal_analysis WHERE Skills LIKE '%Java%'";
 $result = $conn->query($sql);
@@ -104,6 +106,7 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
+</div>
 
     <div id="companyCreation"></div>
     <div id="projectCreation"></div>
