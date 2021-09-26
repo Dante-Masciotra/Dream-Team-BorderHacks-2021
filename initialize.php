@@ -50,7 +50,7 @@
                 position: absolute;
                 right: 1%;
                 top: 5%;
-                border-radius: 50%;
+
             }
             .back *{
                 height: 10%;
@@ -62,7 +62,7 @@
     <body>
     <div class="title">
     <h1>ADD SKILL OR PROJECT</h1>
-    <a href="\.." class="buttons Back" style="width: 10%;"><img src="back-arrow.png" alt=""></a>  
+    <a href="\.." class="back"><img src="back button.png" alt=""></a>  
   </div>
         <div class=Text>
             Please add Skills on the right and add Programs on the left
