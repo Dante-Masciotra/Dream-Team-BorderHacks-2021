@@ -6,7 +6,6 @@
             body{
                 text-align: center;
                 background-color: #313131;
-                color: white;
             }
             .Title{
                 font-size: 25px;
@@ -19,9 +18,9 @@
                 text-align: center;  
             }
             .buttons{
-                color: white;
-                background-color: #313131;
-                border: 2px solid white;
+                font-family: "Trebuchet MS", Helvetica, sans-serif;
+                color: #8c7b88;
+                background-color: #383838;
                 padding: 7px 10px;
                 font-size: 15px;
                 width: 100%;
@@ -32,16 +31,18 @@
                 text-decoration: none;
             }
             .centerButtons{
-                width: 25%;
+                width: 5%;
                 justify-content: center;
-              display: inline-block;
-              margin-bottom: 1%;
+                display: inline-block;
+                margin-bottom: 1%;
             }
             input{
+                font-family: "Trebuchet MS", Helvetica, sans-serif;
                 margin-bottom: 2.5%;
             }
             .inputs{
                 display: inline-flex;
+                margin-top:3vw;
             }
             #Spacer{
                 width: 10%;
@@ -82,7 +83,7 @@
             </div>
             </div>
                 <br>
-            <input class="buttons centerButtons" type="submit" value="submit">
+            <input class="buttons centerButtons" type="submit" value="Submit">
         </form>
 
 

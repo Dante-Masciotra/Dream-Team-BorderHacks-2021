@@ -6,7 +6,6 @@
             body{
                 text-align: center;
                 background-color: #313131;
-                color: white;
             }
             .Title{
                 font-size: 25px;
@@ -14,22 +13,26 @@
                 text-align: center;
             }
             .Text{
+                margin-top: 3vw;
                 font-size: 20px;
                 padding: 20px 10px;
                 text-align: center;  
             }
             .buttons{
+                justify-content:center;
+                background-color: #383838;
                 color: white;
-                background-color: #313131;
-                border: 2px solid white;
-                padding: 7px 10px;
+                margin-top:5vw;
+                padding: 20px 10px;
                 font-size: 15px;
-                width: 100%;
-                margin-bottom: 1%;
+                width: 50%;
                 cursor: pointer;
-                display: block;
+                display: inline-block;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                 text-align: center; /*centers text in box*/
                 text-decoration: none;
+                border-radius:5px;
+                margin-bottom: 1%;
             }
             .centerButtons{
                 width: 25%;
@@ -38,7 +41,7 @@
               margin-bottom: 1%;
             }
             input{
-                margin-bottom: 2.5%;
+                margin-bottom: 3vw;
             }
             .back{
                 top: 5vw;    

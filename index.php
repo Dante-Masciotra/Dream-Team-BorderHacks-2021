@@ -8,16 +8,19 @@
                 text-align: center;
             }
             .buttons{
-                background-color: rgb(49, 49, 49);
-                border: 2px solid gainsboro;
+                justify-content:center;
+                background-color: #383838;
                 color: gainsboro;
-                padding: 7px 10px;
+                margin-top:5vw;
+                padding: 20px 10px;
                 font-size: 15px;
-                width: 100%;
+                width: 50%;
                 cursor: pointer;
-                display: block;
+                display: inline-block;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
                 text-align: center; /*centers text in box*/
                 text-decoration: none;
+                border-radius:5px;
                 margin-bottom: 1%;
             }
             .Title{
@@ -25,10 +28,12 @@
                 font-size: 25px;
                 padding: 5px 5px;
                 text-align: center;
+                margin-bottom: 5vw;
             }
             .Text{
-                color:gainsboro;
+                color: #8c7b88;
                 font-size: 20px;
+                font-family: "Trebuchet MS", Helvetica, sans-serif;
                 padding: 5px 5px;
                 text-align: center;
             }
