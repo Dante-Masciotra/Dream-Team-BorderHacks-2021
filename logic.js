@@ -1,3 +1,4 @@
+
 function select(id) {
     var element = document.getElementById(id);
     element.removeAttribute(onclick);
@@ -5,8 +6,14 @@ function select(id) {
     att.value = "deselect(this.id)";
     element.setAttributeNode(att);
     window.parent.document.getElementsByClassName("current")[0].append(element);
+    changeCompatability();
 }
 function deselect(id){
+    if ("del" != id){
+        document.getElementById(id).removeAttribute;
+    }
+
+    document.getElementById("suggested").contentWindow.location.reload();
     var element = document.getElementById(id);
     
     element.parentNode.removeChild(element);
@@ -30,6 +37,45 @@ function sendToFrame(skill){
     xmlhttp.send();
 
     document.getElementById("suggested").src="form.php?skill="+skill;
-    console.log(skill);
-    //document.getElementById("suggested").contentWindow.location.reload();
+}
+
+function checkCompatability(){
+    var elements = document.getElementsByClassName("personality-content");
+    for (var j = 0; j < children.length; j++){
+        //Switch For Brigs
+        switch(){
+            case "INFP":
+                break;
+            case "ENFP":
+                break;
+            case "INFJ":
+                break;
+            case "ENFJ":
+                break;
+            case "INTJ":
+                break;
+            case "ENTJ":
+                break;
+            case "INTP":
+                break;
+            case "ENTP":
+                break;
+            case "ISFP":
+                break;
+            case "ESFP":
+                break;
+            case "ISTP":
+                break;
+            case "ESTP":
+                break;
+            case "ISFJ":
+                break;
+            case "ESFJ":
+                break;
+            case "ISTJ":
+                break;
+            case "ESTJ":
+                break;
+        }
+    }  
 }
