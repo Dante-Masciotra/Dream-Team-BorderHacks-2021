@@ -66,6 +66,9 @@
               <a href="EmployeeInfo.php" class="buttons">
               EMPLOYEE
               </a>
+              <a href="initialize.php" class="buttons">
+              INITALIZE
+              </a>
           </div>
         <!-- </div> -->
 
