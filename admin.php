@@ -41,18 +41,20 @@ if ($conn->connect_error) {
 }
   $sql = "SELECT * FROM skills";
   $result = $conn->query($sql);
-  if ($result->num_rows > 0) {
+  $sql2 = "SELECT * FROM program";
+  $result2 = $conn->query($sql2);
+  if ($result->num_rows > 0 || $result2->num_rows > 0) {
   // output data of each row
 
     echo"<div id='selection'>
         <div class='dropdown'>
-            <button class='dropbtn'>Dropdown</button>
+            <button class='dropbtn'>Skills and Programs</button>
             <div class='dropdown-content'>
             <form action='index.php'>";
             while($row = $result->fetch_assoc()) {
               echo "<input onclick='sendToFrame(this.value)' type='radio' value='".$row['Skill']."' name='skill'>".$row['Skill']."</input>";
             }
-            while($row = $result->fetch_assoc()) {
+            while($row = $result2->fetch_assoc()) {
               echo "<input onclick='sendToFrame(this.value)' type='radio' value='".$row['Program']."' name='skill'>".$row['Program']."</input>";
             }
     echo     "

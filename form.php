@@ -23,7 +23,7 @@ if ($conn->connect_error) {
 
 $skill=$_REQUEST['skill'];
 if($skill!=" "){
-$sql = "SELECT * FROM personal_analysis WHERE Skills LIKE '%$skill%' OR Program LIKE '%Java$skill%'";
+$sql = "SELECT * FROM personal_analysis WHERE Skills LIKE '%$skill%' OR Program LIKE '%$skill%'";
 $result = $conn->query($sql);
 }else{
   $result=null;
