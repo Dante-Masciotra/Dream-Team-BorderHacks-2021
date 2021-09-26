@@ -16,7 +16,7 @@ function removeDupes(){
     for(var i = 0; i < children.length; i++){
         var elements = document.getElementsByClassName("employee");
         for(var j = 0; j < elements.length; j++){
-            if (children[i].getElementsByClassName("name")[0] == elements[j].getElementsByClassName("name")[0]){
+            if (children[i].getElementsByClassName("name")[0].innerHTML == elements[j].getElementsByClassName("name")[0].innerHTML){
                 elements[j].parentNode.removeChild(elements[j]);
                 break;
             }
