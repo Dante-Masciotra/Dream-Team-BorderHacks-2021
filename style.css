@@ -1,5 +1,18 @@
 body{
     height: 100%;
+    background-color: #313131;
+}
+.title{
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    background-color:#383838;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.title h1{
+    color:#61525d;
+    text-align:center;
+    font-size: 500%;
+    font-family:"Verdana";
 }
 
 h2{
@@ -22,7 +35,6 @@ h3{
     width:50%;
 }
 section {
-    padding: 3px;
     display:flex;
 }
 .employee{
@@ -69,14 +81,17 @@ section {
 
 .dropdown {
     position: relative;
+    display:inline-block;
+    
 }
   
 .dropbtn {
-  background-color: #a1a5a3;
-  color: white;
-  padding: 16px;
-  font-size: 16px;
-  border: none;
+    margin-top:3vh;
+    background-color: #a1a5a3;
+    color: white;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
 }
 
 .dropdown-content {
@@ -86,16 +101,26 @@ section {
   min-width: 160px;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
+  width:100%;
 }
 
 .dropdown-content input {
   color: black;
   padding: 12px 16px;
   text-decoration: none;
-  display:inline-block;
+  display:inline;
 }
-
-.dropdown-content input:hover {background-color: #ddd;}
+.dropdown-content .radioBtn{
+    display:block;
+    padding-top:5px;
+    padding-bottom:5px;
+    border-style: solid;
+    border-color:lightgray;
+    border-width:0.1px;
+}
+.dropdown-content input:hover {
+    background-color: #ddd;
+}
 
 .dropdown:hover .dropdown-content {display: block;}
 

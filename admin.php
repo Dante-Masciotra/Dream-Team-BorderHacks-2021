@@ -27,6 +27,9 @@ if ($conn->connect_error) {
     <title>Document</title>
 </head>
 <body onload="sendToFrame('Java')">
+  <div class="title">
+    <h1>Project Title</h1>
+  </div>
   <?php
 $servername = "localhost";
 $username = "root";
@@ -52,10 +55,14 @@ if ($conn->connect_error) {
             <div class='dropdown-content'>
             <form action='index.php'>";
             while($row = $result->fetch_assoc()) {
+              echo "<div class='radioBtn'>";
               echo "<input onclick='sendToFrame(this.value)' type='radio' value='".$row['Skill']."' name='skill'>".$row['Skill']."</input>";
+              echo "</div>";
             }
             while($row = $result2->fetch_assoc()) {
+              echo "<div class='radioBtn'>";
               echo "<input onclick='sendToFrame(this.value)' type='radio' value='".$row['Program']."' name='skill'>".$row['Program']."</input>";
+              echo "</div>";
             }
     echo     "
     </div>
