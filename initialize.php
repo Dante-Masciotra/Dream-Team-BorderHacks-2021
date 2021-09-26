@@ -46,15 +46,17 @@
             #Spacer{
                 width: 10%;
             }
+            
             .back{
+                width:5%;
                 position: absolute;
-                right: 1%;
-                top: 5%;
+                right: 5%;
+                top: 5vw;
 
             }
             .back *{
-                height: 10%;
-                width: 10%;
+                max-width: 100%;
+                height:min-content;
             }
 
         </style>
