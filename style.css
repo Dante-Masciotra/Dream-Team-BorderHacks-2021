@@ -1,3 +1,6 @@
+body{
+}
+
 h2{
     font-size:100%;
 }
@@ -22,14 +25,15 @@ section {
     display:flex;
 }
 .employee{
+    background-color:#d0cad9;
     margin:10vh;
     border-style:solid;
     border-radius:3vw;
-    border-color:black;
+    border-color: white;
 }
 .employee:hover{
-    border-color:blue !important;
-    background-color:lightgray;
+    border-color:#98b4ed !important;
+    background-color:white;
     cursor:pointer;
 }
 .employee img {
