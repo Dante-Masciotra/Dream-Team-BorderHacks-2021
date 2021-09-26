@@ -5,6 +5,9 @@ function select(id) {
     var att = document.createAttribute("onclick");
     att.value = "deselect(this.id)";
     element.setAttributeNode(att);
+    var img = element.getElementsByClassName("personality-content");
+    img[2].remove()
+    img[4].remove()
     window.parent.document.getElementsByClassName("current")[0].append(element);
 }
 function deselect(id){
@@ -58,54 +61,54 @@ function checkCompatability(){
         var flag = window.parent.document.getElementsByClassName("checked")[0];
         if (flag == null)
             return;
-        switch(flag .getElementsByClassName("personality-content")[2].innerHTML){
+        switch(flag.getElementsByClassName("personality-content")[1].innerHTML){
             case "S":
-                switch(personas[4].innerHTML){
+                switch(personas[1].innerHTML){
                     case "M":
-                        personas[5].src="cross-mark.png";
+                        personas[2].src="cross-mark.png";
                         break;
                     case "P":
-                        personas[5].src="circle.png";
+                        personas[2].src="circle.png";
                         break;
                     case "C":
-                        personas[5].src="circle.png";
+                        personas[2].src="circle.png";
                         break;
                 }
                 break;
             case "M":
-                switch(personas[4].innerHTML){
+                switch(personas[1].innerHTML){
                     case "S":
-                        personas[5].src="cross-mark.png";
+                        personas[2].src="cross-mark.png";
                         break;
                     case "P":
-                        personas[5].src="circle.png";
+                        personas[2].src="circle.png";
                         break;
                     case "C":
-                        personas[5].src="circle.png";
+                        personas[2].src="circle.png";
                 }
                 break;
             case "P":
-                switch(personas[4].innerHTML){
+                switch(personas[1].innerHTML){
                     case "C":
-                        personas[5].src="cross-mark.png";
+                        personas[2].src="cross-mark.png";
                         break;
                     case "M":
-                        personas[5].src="circle.png";
+                        personas[2].src="circle.png";
                         break;
                     case "S":
-                        personas[5].src="circle.png";
+                        personas[2].src="circle.png";
                 }
                 break; 
             case "C":
-                switch(personas[4].innerHTML){
+                switch(personas[1].innerHTML){
                     case "P":
-                        personas[5].src="cross-mark.png";
+                        personas[2].src="cross-mark.png";
                         break;
                     case "M":
-                        personas[5].src="circle.png";
+                        personas[2].src="circle.png";
                         break;
                     case "S":
-                        personas[5].src="circle.png";
+                        personas[2].src="circle.png";
                 }
                 break;
         }        
