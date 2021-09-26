@@ -45,6 +45,7 @@
     <body>
     <div class="title">
     <h1>EMPLOYEE SURVEY</h1>
+    <a href="\.." class="back"><img src="back button.png" alt=""></a>  
   </div>
         <div class=Text>
             Please follow the provided links and complete the MBTI personality quiz, The Working Genius, and the Color Traits assesment.<br>

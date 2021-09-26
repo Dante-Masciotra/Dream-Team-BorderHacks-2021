@@ -29,6 +29,7 @@ if ($conn->connect_error) {
 <body onload="sendToFrame('Java')">
   <div class="title">
     <h1>TEAM FORMATION</h1>
+    <a href="\.." class="back"><img src="back button.png" alt=""></a>  
   </div>
   <?php
 $servername = "localhost";
