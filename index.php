@@ -65,7 +65,7 @@ if ($conn->connect_error) {
 <div class="current"></div>
 <div class="suggested">
 <?php
-// $skill='Java';
+$skill='Java';
 if($skill!=" "){
 $sql = "SELECT * FROM personal_analysis WHERE Skills LIKE '%$skill%' OR Program LIKE '%Java%'";
 $result = $conn->query($sql);
