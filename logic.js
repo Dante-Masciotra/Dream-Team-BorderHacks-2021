@@ -4,7 +4,8 @@ function select(id) {
     var att = document.createAttribute("onclick");
     att.value = "deselect(this.id)";
     element.setAttributeNode(att);
-    document.getElementsByClassName("current")[0].append(element);
+    // window.parent.document.getElementById("current").innerHTML ="Hello";
+    window.parent.document.getElementsByClassName("current")[0].append(element);
 }
 function deselect(id){
     var element = document.getElementById(id);

@@ -61,7 +61,7 @@ if ($conn->connect_error) {
     echo "No Skills";
   }
 ?>
-<div class="current"></div>
+<div class="current" id="current"></div>
 <div class="suggested" style=" height:100%;" >
 <iframe src="form.php" style="width:100%; height:100%;" frameborder="0"></iframe>
 </div>
