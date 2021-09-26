@@ -1,45 +1,42 @@
 <html>
     <head>
         <style>
+            body{
+                text-align: center;
+                background-color: #313131;
+                color: white;
+            }
             .Title{
-                color: black;
                 font-size: 25px;
                 padding: 5px 5px;
                 text-align: center;
             }
             .Text{
-                color: black;
                 font-size: 20px;
                 padding: 20px 10px;
                 text-align: center;  
             }
             .buttons{
-                background-color: white;
-                border: 2px solid black;
-                color: black;
+                color: white;
+                background-color: #313131;
+                border: 2px solid white;
                 padding: 7px 10px;
                 font-size: 15px;
                 width: 100%;
+                margin-bottom: 1%;
                 cursor: pointer;
                 display: block;
                 text-align: center; /*centers text in box*/
+                text-decoration: none;
             }
             .centerButtons{
-                margin: 0;
-                position: absolute;
-                top: 20%;
-                left: 50%;
-                -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
+                width: 25%;
+                justify-content: center;
+              display: inline-block;
+              margin-bottom: 1%;
             }
-            .centerForms{
-                margin: 0;
-                position: absolute;
-                top: 35%;
-                left: 50%;
-                -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
-                padding: 1,4;
+            input{
+                margin-bottom: 2.5%;
             }
         </style>
     </head>
@@ -63,40 +60,40 @@
             </a>
         </div>
         <form class = 'centerForms' action="<?php echo $_SERVER['PHP_SELF'] ?>" method='post'>
-            <label for="name" >Name:</label>
+            <label for="name" >Name:</label><br>
             <input type="text" id="name" name="name"><br>
 
-            <label for="id">ID Number:</label>
+            <label for="id">ID Number:</label><br>
             <input type="text" id="id" name="id"><br>
 
-            <label for="department" >Department:</label>
+            <label for="department" >Department:</label><br>
             <input type="text" id="department" name="department"><br>
 
-            <label for="position" >Position:</label>
+            <label for="position" >Position:</label><br>
             <input type="text" id="position" name="position"><br>
 
-            <label for="mbti">MBTI Results:</label>
+            <label for="mbti">MBTI Results:</label><br>
             <input type="text" id="mbti" name="mbti"><br>
 
-            <label for="workingGenius">Working Genius Reults:</label>
+            <label for="workingGenius">Working Genius Reults:</label><br>
             <input type="text" id="workingGenius" name="workingGenius"><br>
 
-            <label for="colorTraits">Color Traits Results:</label>
+            <label for="colorTraits">Color Traits Results:</label><br>
             <input type="text" id="colorTraits" name="colorTraits"><br>
 
-            <label for="skills">Skills(seprated by a comma please):</label>
+            <label for="skills">Skills(seprated by a comma please):</label><br>
             <input type="text" id="skills" name="skills"><br>
 
-            <label for="slevel">Skill Level(seprated by a comma please):</label>
+            <label for="slevel">Skill Level(seprated by a comma please):</label><br>
             <input type="text" id="slevel" name="slevel"><br>
 
-            <label for="program">Program(seprated by a comma please):</label>
+            <label for="program">Program(seprated by a comma please):</label><br>
             <input type="text" id="program" name="program"><br>
 
-            <label for="plevel">Program level (seprated by a comma please):</label>
+            <label for="plevel">Program level (seprated by a comma please):</label><br>
             <input type="text" id="plevel" name="plevel"><br>
 
-            <input type="submit" value="submit">
+            <input class="buttons centerButtons" type="submit" value="submit">
         </form>
     </body>
 </html>

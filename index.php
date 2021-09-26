@@ -4,6 +4,7 @@
         <style>
             .body{
                 background-color: rgb(49, 49, 49);
+                text-align: center;
             }
             .buttons{
                 background-color: rgb(49, 49, 49);
@@ -15,6 +16,8 @@
                 cursor: pointer;
                 display: block;
                 text-align: center; /*centers text in box*/
+                text-decoration: none;
+                margin-bottom: 1%;
             }
             .Title{
                 color: gainsboro;
@@ -29,12 +32,15 @@
                 text-align: center;
             }
             .centerButtons{
-                margin: 0;
+              width: 25%;
+              justify-content: center;
+              display: inline-block;
+                /* margin: 0;
                 position: absolute;
                 top: 30%;
                 left: 49.5%;
                 -ms-transform: translate(-50%, -50%);
-                transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); */
             }
         </style>
     </head>
@@ -52,13 +58,16 @@
             Please select your whether your profile is an admin or employee
         </div>
         <!-- Do linking here-->
-        <div class=centerButtons>
-            <a href="admin.php" class="buttons">
-            ADMIN
-            </a>  
-            <a href="EmployeeInfo.php" class="buttons">
-            EMPLOYEE
-            </a>
+        <!-- <div class="ParentButtons"> -->
+          <div class=centerButtons>
+              <a href="admin.php" class="buttons">
+              ADMIN
+              </a>  
+              <a href="EmployeeInfo.php" class="buttons">
+              EMPLOYEE
+              </a>
+          </div>
+        <!-- </div> -->
 
     </body>
 </html>
