@@ -10,6 +10,8 @@ $conn = new mysqli($servername, $username, $password, $dbname);
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
+// $skill = $_POST["drone"];
+// echo "<p>".$skill."</p>";
 ?>
 
 
@@ -26,32 +28,50 @@ if ($conn->connect_error) {
 </head>
 <body>
   <?php
-  $skill='Java';
-  $sql2 = "SELECT * FROM skills";
-  $result2 = $conn->query($sql2);
-  if ($result2->num_rows > 0) {
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "rolecall";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+  $sql = "SELECT * FROM skills";
+  $result = $conn->query($sql);
+  if ($result->num_rows > 0) {
   // output data of each row
 
     echo"<div id='selection'>
         <div class='dropdown'>
             <button class='dropbtn'>Dropdown</button>
-            <div class='dropdown-content'>";
-            while($row = $result2->fetch_assoc()) {
-              echo "<input type='radio' name='drone'>".$row['Skill']."</input>";
+            <div class='dropdown-content'>
+            <form action='index.php'>";
+            while($row = $result->fetch_assoc()) {
+              echo "<input type='radio' value='".$row['Skill']."' name='drone'>".$row['Skill']."</input>";
             }
-    echo     "</div>
+    echo     "
+    </div>
+    <input type='submit'>  </form>
           </div>
     </div>";
   } else {
     echo "No Skills";
   }
 ?>
+  <!-- <iframe src="form.php" frameborder="0"></iframe> -->
 <div class="current"></div>
 <div class="suggested">
 <?php
-$skill='Java';
+// $skill='Java';
+if($skill!=" "){
 $sql = "SELECT * FROM personal_analysis WHERE Skills LIKE '%$skill%' OR Program LIKE '%Java%'";
 $result = $conn->query($sql);
+}else{
+  $result=null;
+}
 if ($result->num_rows > 0) {
   // output data of each row
   $i=0;
