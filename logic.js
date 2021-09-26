@@ -8,14 +8,26 @@ function select(id) {
     window.parent.document.getElementsByClassName("current")[0].append(element);
 }
 function deselect(id){
-    if ("del" != id){
-        document.getElementById(id).removeAttribute;
+    //Grab the elements
+    var element1 = document.getElementsByClassName("checked")[0];
+    var element2 = document.getElementById(id);
+    if(element1 == null){
+        //Get rid of the last element
+        element2.classList.add("checked");
+        document.getElementById("suggested").contentWindow.location.reload();
+        return;
+    }
+    //Check if the element was already clicked
+    if (element1.getAttribute('id') == id){
+        document.getElementById("suggested").contentWindow.location.reload();
+    
+        element1.parentNode.removeChild(element1);
     }
 
+    //Get rid of the last element
+    element1.classList.remove("checked");
+    element2.classList.add("checked");
     document.getElementById("suggested").contentWindow.location.reload();
-    var element = document.getElementById(id);
-    
-    element.parentNode.removeChild(element);
 }
 function removeDupes(){
     var children = window.parent.document.getElementsByClassName("employee");
@@ -39,41 +51,436 @@ function sendToFrame(skill){
 }
 
 function checkCompatability(){
-    var elements = document.getElementsByClassName("personality-content");
-    for (var j = 0; j < children.length; j++){
+    var elements = document.getElementsByClassName("employee");
+    for (var j = 0; j < elements.length; j++){
         //Switch For Brigs
-        switch(true){
+        var personas = elements[j].getElementsByClassName("personality-content");
+        var flag = window.parent.document.getElementsByClassName("checked")[0];
+        if (flag == null)
+            return;
+        switch(flag .getElementsByClassName("personality-content")[4].innerHTML){
             case "INFP":
+                switch(personas[4].innerHTML){
+                    case "ENFJ":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "ENTJ":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "ISFP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ESFP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ISTP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ESTP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ISFJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ESFJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ISTJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ESTJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                }
                 break;
             case "ENFP":
+                switch(personas[4].innerHTML){
+                    case "INFJ":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "INTJ":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "ISFP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ESFP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ISTP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ESTP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ISFJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ESFJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ISTJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ESTJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                }
                 break;
             case "INFJ":
+                switch(personas[4].innerHTML){
+                    case "ENFP":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "ENTP":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "ISFP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ESFP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ISTP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ESTP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ISFJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ESFJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ISTJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ESTJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                }
                 break;
             case "ENFJ":
+                switch(personas[4].innerHTML){
+                    case "INFP":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "ISFP":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "ESFP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ISTP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ESTP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ISFJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ESFJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ISTJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ESTJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                }
                 break;
             case "INTJ":
+                switch(personas[4].innerHTML){
+                    case "ENFP":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "ENTP":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                }
                 break;
             case "ENTJ":
+                switch(personas[4].innerHTML){
+                    case "INFP":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "INTP":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                }
                 break;
             case "INTP":
+                switch(personas[4].innerHTML){
+                    case "ENTJ":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "ESTJ":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                }
                 break;
             case "ENTP":
+                switch(personas[4].innerHTML){
+                    case "INFJ":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                }
                 break;
             case "ISFP":
+                switch(personas[4].innerHTML){
+                    case "ENFJ":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "ESFJ":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "ESTJ":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "INFP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ENFP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "INFJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                }
                 break;
             case "ESFP":
+                switch(personas[4].innerHTML){
+                    case "ISFJ":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "ISTJ":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "INFP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ENFP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "INFJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ENFJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;  
+                }  
                 break;
             case "ISTP":
+                switch(personas[4].innerHTML){
+                    case "ESFJ":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "ESTJ":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "INFP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ENFP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "INFJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ENFJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                }
                 break;
             case "ESTP":
+                switch(personas[4].innerHTML){
+                    case "ISFJ":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "ISTJ":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "INFP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ENFP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "INFJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ENFJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                }
                 break;
             case "ISFJ":
+                switch(personas[4].innerHTML){
+                    case "ESFP":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "ESTP":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "INFP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ENFP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "INFJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ENFJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                }
                 break;
             case "ESFJ":
+                
                 break;
             case "ISTJ":
+                switch(personas[4].innerHTML){
+                    case "ISFP":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "ISTP":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "INFP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ENFP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "INFJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ENFJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                }
                 break;
             case "ESTJ":
+                switch(personas[4].innerHTML){
+                    case "ISFP":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "ISTP":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "ENTJ":
+                        //blue
+                        personas[5].src="circle.png";
+                        break;
+                    case "INFP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ENFP":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "INFJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "ENFJ":
+                        //red
+                        personas[5].src="cross-mark.png";
+                        break;
+                }
                 break;
         }
     }  
