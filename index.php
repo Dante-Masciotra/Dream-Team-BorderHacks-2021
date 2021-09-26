@@ -24,25 +24,39 @@ if ($conn->connect_error) {
     <title>Document</title>
 </head>
 <body>
-    <div id="selection">
-        <div class="dropdown">
-            <button class="dropbtn">Dropdown</button>
-            <div class="dropdown-content">
-              <input type="checkbox">Skill</input>
-            </div>
+  <?php
+  $skill='Java';
+  $sql2 = "SELECT * FROM skills";
+  $result2 = $conn->query($sql2);
+  if ($result2->num_rows > 0) {
+  // output data of each row
+
+    echo"<div id='selection'>
+        <div class='dropdown'>
+            <button class='dropbtn'>Dropdown</button>
+            <div class='dropdown-content'>";
+            while($row = $result2->fetch_assoc()) {
+              echo "<input type='radio' name='drone'>".$row['Skill']."</input>";
+            }
+    echo     "</div>
           </div>
-    </div>
+    </div>";
+  } else {
+    echo "No Skills";
+  }
+?>
 <div class="current"></div>
 <div class="suggested">
 <?php
-$sql = "SELECT * FROM personal_analysis WHERE Skills LIKE '%Java%'";
+$skill='Java';
+$sql = "SELECT * FROM personal_analysis WHERE Skills LIKE '%$skill%' OR Program LIKE '%Java%'";
 $result = $conn->query($sql);
 if ($result->num_rows > 0) {
   // output data of each row
   $i=0;
   while($row = $result->fetch_assoc()) {
     $i++;
-    echo "<div class='employee' id='e$i'>
+    echo "<div class='employee' id='e$i' onclick='select(this.id)'>
     <section>
         <img src='avatar.png' alt='Avatar'>
         <h1 class='name'>" . $row["Ename"] ."</h1>
