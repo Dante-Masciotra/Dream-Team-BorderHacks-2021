@@ -52,6 +52,9 @@ if ($conn->connect_error) {
             while($row = $result->fetch_assoc()) {
               echo "<input onclick='sendToFrame(this.value)' type='radio' value='".$row['Skill']."' name='skill'>".$row['Skill']."</input>";
             }
+            while($row = $result->fetch_assoc()) {
+              echo "<input onclick='sendToFrame(this.value)' type='radio' value='".$row['Program']."' name='skill'>".$row['Program']."</input>";
+            }
     echo     "
     </div>
     <input type='submit'>  </form>
