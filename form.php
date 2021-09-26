@@ -7,6 +7,7 @@
     <script src="logic.js"></script>
     <title>Document</title>
 </head>
+<body onload="removeDupes()">
 <?php
 $servername = "localhost";
 $username = "root";
@@ -20,7 +21,7 @@ if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
 
-$skill='Java';
+$skill=$_REQUEST['skill'];
 if($skill!=" "){
 $sql = "SELECT * FROM personal_analysis WHERE Skills LIKE '%$skill%' OR Program LIKE '%Java%'";
 $result = $conn->query($sql);
@@ -95,3 +96,4 @@ if ($result->num_rows > 0) {
 }
 $conn->close();
 ?>
+</body>

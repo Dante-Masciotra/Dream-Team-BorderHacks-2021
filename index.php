@@ -26,7 +26,7 @@ if ($conn->connect_error) {
     <script src="logic.js"></script>
     <title>Document</title>
 </head>
-<body>
+<body onload="sendToFrame('Java')">
   <?php
 $servername = "localhost";
 $username = "root";
@@ -50,7 +50,7 @@ if ($conn->connect_error) {
             <div class='dropdown-content'>
             <form action='index.php'>";
             while($row = $result->fetch_assoc()) {
-              echo "<input type='radio' value='".$row['Skill']."' name='drone'>".$row['Skill']."</input>";
+              echo "<input onclick='sendToFrame(this.value)' type='radio' value='".$row['Skill']."' name='skill'>".$row['Skill']."</input>";
             }
     echo     "
     </div>
@@ -63,7 +63,7 @@ if ($conn->connect_error) {
 ?>
 <div class="current" id="current"></div>
 <div class="suggested" style=" height:100%;" >
-<iframe src="form.php" style="width:100%; height:100%;" frameborder="0"></iframe>
+<iframe id="suggested" src="form.php?skill=Typing" style="width:100%; height:100%;" frameborder="0"></iframe>
 </div>
 
     <div id="companyCreation"></div>
