@@ -58,6 +58,57 @@ function checkCompatability(){
         var flag = window.parent.document.getElementsByClassName("checked")[0];
         if (flag == null)
             return;
+        switch(flag .getElementsByClassName("personality-content")[2].innerHTML){
+            case "S":
+                switch(personas[4].innerHTML){
+                    case "M":
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "P":
+                        personas[5].src="circle.png";
+                        break;
+                    case "C":
+                        personas[5].src="circle.png";
+                        break;
+                }
+                break;
+            case "M":
+                switch(personas[4].innerHTML){
+                    case "S":
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "P":
+                        personas[5].src="circle.png";
+                        break;
+                    case "C":
+                        personas[5].src="circle.png";
+                }
+                break;
+            case "P":
+                switch(personas[4].innerHTML){
+                    case "C":
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "M":
+                        personas[5].src="circle.png";
+                        break;
+                    case "S":
+                        personas[5].src="circle.png";
+                }
+                break; 
+            case "C":
+                switch(personas[4].innerHTML){
+                    case "P":
+                        personas[5].src="cross-mark.png";
+                        break;
+                    case "M":
+                        personas[5].src="circle.png";
+                        break;
+                    case "S":
+                        personas[5].src="circle.png";
+                }
+                break;
+        }        
         switch(flag .getElementsByClassName("personality-content")[4].innerHTML){
             case "INFP":
                 switch(personas[4].innerHTML){
