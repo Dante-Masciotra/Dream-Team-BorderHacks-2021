@@ -6,7 +6,6 @@ function select(id) {
     att.value = "deselect(this.id)";
     element.setAttributeNode(att);
     window.parent.document.getElementsByClassName("current")[0].append(element);
-    changeCompatability();
 }
 function deselect(id){
     if ("del" != id){
@@ -43,7 +42,7 @@ function checkCompatability(){
     var elements = document.getElementsByClassName("personality-content");
     for (var j = 0; j < children.length; j++){
         //Switch For Brigs
-        switch(){
+        switch(true){
             case "INFP":
                 break;
             case "ENFP":
