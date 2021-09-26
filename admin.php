@@ -59,7 +59,6 @@ if ($conn->connect_error) {
             }
     echo     "
     </div>
-    <input type='submit'>  </form>
           </div>
     </div>";
   } else {

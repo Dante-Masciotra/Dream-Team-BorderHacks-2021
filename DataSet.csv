@@ -1,20 +1,21 @@
-﻿1,Zach W,IT,Jr Dev,ENFJ,Wonder,Red,"Java,CSS","2,3",VSC,2
-2,Craig A,IT,Jr Dev,INFJ,Invention,White,"Python,Java","3,5",VSC,3
-3,Dante M,IT,Sr Dev,ENTP,Discernment,Blue,"C,C#","4,2",VSC,4
-4,Kousei A,Accounting,Dept Head,INTP,Galvanizing,Yellow,"Spreadsheets,Typing","3,3",MS Office,2
-5,Kaori M,Accounting,Intern,ESTP,Enablment,Yellow,"Spreadsheets,Typing","4,5",MS Office,3
-6,Naruto U,HR,Dept Head,ISFJ,Tenacity,Blue,"E-mail,Research","2,2",Google,3
-7,Sasuke U,HR,Asst manager,INTJ,Invention,Yellow,"E-mail,Research","1,4",Google,2
-8,John D,IT,Intern,INTP,Wonder,Red,"Java,CSS","1,1",VSC,4
-9,Jane D,Sales,Public Relations,INFP,Enablment,White,"Tweeting,Blogging","3,4",Google,5
-10,Obi-Wan K,Sales,Dept Head,ISFP,Galvanizing,Blue,"E-mail,Calling","4,5",Google,5
-11,Luke S,Accounting,Intern,ESFP,Discernment,Blue,"Spreadsheets,Typing","4,2",MS Office,3
-12,Anakin S,HR,Intern,ISTP,Galvanizing,White,"E-mail,Writing","5,5",MS Office,2
-13,Mike M,IT,Dept Head,ENTJ,Invention,White,"Python,CSS","3,2",VSC,4
-14,Ben L,Sales,Salesman,ISFJ,Tenacity,White,"Dialing,Writing","2,1",MS Office,5
-15,Jerry S,Sales,Telemarketer,ISTJ,Tenacity,Yellow,"Dialing,Talking","5,3",Google,3
-16,Kevin H,HR,Customer Relations,ESFJ,Enablment,Blue,"E-mail,Dialing","3,3",Google,2
-17,Shuri D,Sales,RnD,INTJ,Wonder,Red,"Typing,Research","1,4",Wikipedia,1
-18,Michelle A,Accounting,New hire,ISFP,Wonder,Blue,"Spreadsheets,Typing","5,5",MS Office,3
-19,Miranda L,HR,RnD,ESFP,Invention,White,"E-mail,Research","2,2",Wikipedia,4
-20,Gwen S,Accounting,New hire,ESTP,Discernment,Yellow,Spreadsheets,"2,4",MS Office,4
+ID,Name,Department,Position,MBTI,WG,CT,Skill(s),Skill Level(s),Program,Program Level,,
+1,Zach W,IT,Jr Dev,ENFJ,Wonder,S,"Java,Python","2,3",VSC,2,,
+2,Craig A,IT,Jr Dev,INFJ,Invention,C,"Python,Java","3,5",VSC,3,,
+3,Dante M,IT,Sr Dev,ENTP,Discernment,M,"C,C#","4,2",VSC,4,,
+4,Kousei A,Accounting,Dept Head,INTP,Galvanizing,P,"Spreadsheets,Typing","3,3",MS Office,2,,
+5,Kaori M,Accounting,Intern,ESTP,Enablment,S,"Spreadsheets,Typing","4,5",MS Office,3,,
+6,Naruto U,HR,Dept Head,ISFJ,Tenacity,C,"E-mail,Research","2,2",Google,3,,
+7,Sasuke U,HR,Asst manager,INTJ,Invention,M,"E-mail,Research","1,4",Google,2,,
+8,John D,IT,Intern,INTP,Wonder,M,"Java,CSS","1,1",VSC,4,,
+9,Jane D,Sales,Public Relations,INFP,Enablment,P,"Tweeting,Blogging","3,4",Google,5,,
+10,Obi-Wan K,Sales,Dept Head,ISFP,Galvanizing,P,"E-mail,Calling","4,5",Google,5,,
+11,Luke S,Accounting,Intern,ESFP,Discernment,S,"Spreadsheets,Typing","4,2",MS Office,3,,
+12,Anakin S,HR,Intern,ISTP,Galvanizing,C,"E-mail,Writing","5,5",MS Office,2,,
+13,Mike M,IT,Dept Head,ENTJ,Invention,P,"Python,CSS","3,2",VSC,4,,
+14,Ben L,Sales,Salesman,ISFJ,Tenacity,S,"Dialing,Writing","2,1",MS Office,5,,
+15,Jerry S,Sales,Telemarketer,ISTJ,Tenacity,C,"Dialing,Talking","5,3",Google,3,,
+16,Kevin H,HR,Customer Relations,ESFJ,Enablment,S,"E-mail,Dialing","3,3",Google,2,,
+17,Shuri D,Sales,RnD,INTJ,Wonder,M,"Typing,Research","1,4",Wikipedia,1,,
+18,Michelle A,Accounting,New hire,ISFP,Wonder,M,"Spreadsheets,Typing","5,5",MS Office,3,,
+19,Miranda L,HR,RnD,ESFP,Invention,M,"E-mail,Research","2,2",Wikipedia,4,,
+20,Gwen S,Accounting,New hire,ESTP,Discernment,M,Spreadsheets,"2,4",MS Office,4,,
