@@ -1,5 +1,7 @@
 <html>
     <head>
+    <link rel="stylesheet" href="style.css">
+
         <style>
             body{
                 text-align: center;
@@ -41,9 +43,9 @@
         </style>
     </head>
     <body>
-        <div class=Title>
-            Employee Information
-            </div>
+    <div class="title">
+    <h1>EMPLOYEE SURVEY</h1>
+  </div>
         <div class=Text>
             Please follow the provided links and complete the MBTI personality quiz, The Working Genius, and the Color Traits assesment.<br>
             After completing the assessments please fill in the forms with your responses.

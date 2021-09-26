@@ -1,6 +1,7 @@
 <html>
     <head>
         <!-- Button One -->
+        <link rel="stylesheet" href="style.css">
         <style>
             .body{
                 background-color: rgb(49, 49, 49);
@@ -47,9 +48,9 @@
 
     <body class=body>
         <!-- Project Name-->
-        <div class=Title>
-            <h1>Dream Team</h1>
-        </div>
+        <div class="title">
+    <h1>DREAM TEAM</h1>
+  </div>
         <!--Program Description-->
         <div class=Text>
             Create a team of employees ready to conquer any task 

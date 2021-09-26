@@ -28,7 +28,7 @@ if ($conn->connect_error) {
 </head>
 <body onload="sendToFrame('Java')">
   <div class="title">
-    <h1>Project Title</h1>
+    <h1>TEAM FORMATION</h1>
   </div>
   <?php
 $servername = "localhost";

@@ -1,5 +1,7 @@
 <html>
     <head>
+    <link rel="stylesheet" href="style.css">
+
         <style>
             body{
                 text-align: center;
@@ -45,18 +47,23 @@
                 width: 10%;
             }
             .back{
-                float: right;
                 position: absolute;
-                bottom: 0;
-                right:1%;
+                right: 1%;
+                top: 5%;
+                border-radius: 50%;
+            }
+            .back *{
+                height: 10%;
+                width: 10%;
             }
 
         </style>
     </head>
     <body>
-        <div class=Title>
-            Employee Information
-            </div>
+    <div class="title">
+    <h1>ADD SKILL OR PROJECT</h1>
+    <a href="\.." class="buttons Back" style="width: 10%;"><img src="back-arrow.png" alt=""></a>  
+  </div>
         <div class=Text>
             Please add Skills on the right and add Programs on the left
         </div>
@@ -76,7 +83,7 @@
             <input class="buttons centerButtons" type="submit" value="submit">
         </form>
 
-        <a href="\.." class="buttons Back" style="width: 10%;">BACK</a>  
+
     </body>
 </html>
 <?php

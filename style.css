@@ -3,15 +3,15 @@ body{
     background-color: #313131;
 }
 .title{
-    padding-top: 1vh;
-    padding-bottom: 1vh;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
     background-color:#383838;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
 }
 .title h1{
     color:#61525d;
     text-align:center;
-    font-size: 500%;
+    font-size: 5vw;
     font-family:"Verdana";
 }
 
